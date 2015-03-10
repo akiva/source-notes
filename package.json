@@ -1,6 +1,6 @@
 {
   "name": "source-notes",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Search for TODO, FIXME, or OPTIMI(S|Z)E annotation tags within a directory's source code files",
   "bin": {
     "source-notes": "bin/cli.js"
@@ -9,9 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Akiva Levy <akiva@sixthirteen.co> (http://sixthirteen.co/)",
-  "repository" : {
-    "type" : "git",
-    "url" : "git://github.com/akiva/source-notes.git"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/akiva/source-notes.git"
   },
   "bugs": {
     "url": "https://github.com/akiva/source-notes/issues"
