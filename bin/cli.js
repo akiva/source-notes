@@ -23,7 +23,7 @@ if (argv.h) {
 
 // If a target path is passed in, removing any trailing slashes,
 // otherwise set path to cwd
-argv._[0] = !argv._[0] ? argv._[0].replace(/\/+$/, '') : '.';
+argv._[0] = !!argv._[0] ? argv._[0].replace(/\/+$/, '') : '.';
 
 searchDirectory(argv._[0]);
 
