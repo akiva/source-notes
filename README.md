@@ -1,10 +1,10 @@
 # source-notes
 
 Search files for `TODO`, `FIXME`, or `OPTIMI(S|Z)E` annotations within a
-directory's source code files displaying the file name, line number, 
+directory's source code files displaying the file name, line number,
 annotation type, and remaining annotation description.
 
-Current files types include in the searach are
+Current file types included in the search are
 
 - `*.js`
 - `*.coffee`
