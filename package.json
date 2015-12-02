@@ -1,12 +1,17 @@
 {
   "name": "source-notes",
   "version": "1.1.0",
-  "description": "Search for TODO, FIXME, or OPTIMI(S|Z)E annotation tags within a directory's source code files",
+  "description": "Search source files for TODO, FIXME, OPTIMI(S|Z)E or custom annotation tags",
+  "directories": {
+    "example": "example",
+    "man": "man",
+    "test": "test"
+  },
   "bin": {
-    "source-notes": "bin/cli.js"
+    "source-notes": "bin/cmd.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test/*.js"
   },
   "author": "Akiva Levy <akiva@sixthirteen.co> (http://sixthirteen.co/)",
   "repository": {
@@ -24,9 +29,15 @@
     "fixme"
   ],
   "license": "MIT",
+  "homepage": "https://github.com/akiva/source-notes#readme",
   "dependencies": {
     "chalk": "^0.5.1",
     "minimist": "^1.1.0",
-    "pretty-tree": "^0.2.0"
+    "pretty-tree": "^0.2.0",
+    "readable-stream": "^2.0.4",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "tape": "^4.2.2"
   }
 }
