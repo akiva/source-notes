@@ -1,14 +1,12 @@
 
-  Usage: source-notes [options] <directory>
+  Usage: source-notes [options] <target>
 
-  Search files for TODO, FIXME, or OPTIMI(S|Z)E annotations within a
-  directory's source code files (ie. *.js, *.coffee, *.iced, *.styl,
-  *.jade) displaying the file name, line number, annotation type, and
-  remaining annotation description.
+  Search files or directories for TODO, FIXME, OPTIMI(S|Z)E, or custom
+  annotations.
 
   Options:
 
-    [directory]  Directory to search, defaults to cwd
+    [target]          File or directory to search (defaults to cwd)
     -h, --help        Output usage information
     -v, --version     Show version number
     -a, --annotation  Search for specific annotation type(s) as a

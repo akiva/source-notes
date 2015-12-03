@@ -1,8 +1,21 @@
 # source-notes
 
-Search files for `TODO`, `FIXME`, or `OPTIMI(S|Z)E` annotations within a
-directory's source code files displaying the file name, line number,
-annotation type, and remaining annotation description.
+[![npm][npm-image]][npm-url]
+[![npm version][npm-version-image]][npm-version-url]
+[![travis][travis-image]][travis-url]
+[![stable][stability-image]][stability-url]
+
+[npm-image]: https://nodei.co/npm/source-notes
+[npm-url]: https://www.npmjs.com/package/source-notes
+[npm-version-image]: https://badge.fury.io/js/source-notes
+[npm-version-url]: http://badge.fury.io/js/source-notes
+[travis-image]: https://secure.travis-ci.org/akiva/source-notes.png
+[travis-url]: https://travis-ci.org/akiva/source-notes
+[stability-image]: http://badges.github.io/stability-badges/dist/stable.svg
+[stability-url]: http://github.com/badges/stability-badges
+
+Search files or directories for `TODO`, `FIXME`, `OPTIMI(S|Z)E`, or 
+custom annotations.
 
 Current file types included in the search are
 
@@ -14,42 +27,41 @@ Current file types included in the search are
 
 ## Example
 
-To run `source-notes` on any files located in `test`:
+To run `source-notes` on any files located recursively within `test/`:
 
-    source-notes test
+```bash
+source-notes test
+```
 
 yielding:
 
 ![source-notes screenshot](https://github.com/akiva/source-notes/raw/master/screenshot.png)
 
+## Usage
+
+```
+  Usage: source-notes [options] <target>
+
+  Search files or directories for TODO, FIXME, OPTIMI(S|Z)E, or custom
+  annotations.
+
+  Options:
+
+    [target]          File or directory to search (defaults to cwd)
+    -h, --help        Output usage information
+    -v, --version     Show version number
+    -a, --annotation  Search for specific annotation type(s) as a
+                      singular or comma-separated value
+```
+
 ## Installation
 
 With [npm](http://npmjs.org) do:
 
-```
+```bash
 npm install -g source-notes
 ```
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2014 Akiva Levy <akiva@sixthirteen.co>
-
-Permission is hereby granted, free of charge, to any person obtaining a
-copy of this software and associated documentation files (the "Software"),
-to deal in the Software without restriction, including without limitation
-the rights to use, copy, modify, merge, publish, distribute, sublicense,
-and/or sell copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included
-in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-USE OR OTHER DEALINGS IN THE SOFTWARE.
+MIT, see [LICENSE](LICENSE) for details.
