@@ -1,6 +1,6 @@
 {
   "name": "source-notes",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Search source files for TODO, FIXME, OPTIMI(S|Z)E or custom annotation tags",
   "directories": {
     "example": "example",
