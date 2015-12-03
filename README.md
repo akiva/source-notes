@@ -1,13 +1,13 @@
 # source-notes
 
-[![npm][npm-image]][npm-url]
-[![npm version][npm-version-image]][npm-version-url]
-[![travis][travis-image]][travis-url]
-[![stable][stability-image]][stability-url]
+[![npm][npm-image]][npm-url]  
+[![npm version][npm-version-image]][npm-version-url]  
+[![travis][travis-image]][travis-url]  
+[![stable][stability-image]][stability-url]  
 
-[npm-image]: https://nodei.co/npm/source-notes
+[npm-image]: https://nodei.co/npm/source-notes.png
 [npm-url]: https://www.npmjs.com/package/source-notes
-[npm-version-image]: https://badge.fury.io/js/source-notes
+[npm-version-image]: https://badge.fury.io/js/source-notes.svg
 [npm-version-url]: http://badge.fury.io/js/source-notes
 [travis-image]: https://secure.travis-ci.org/akiva/source-notes.png
 [travis-url]: https://travis-ci.org/akiva/source-notes
