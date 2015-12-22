@@ -83,27 +83,12 @@ function processFile(file) {
 
 function displayAsTree() {
   if (!results.length) return false;
-  var resultsTree = {
-    label: null,
-    nodes: []
-  };
-  // Single file tree results
-  if (results.length === 1) {
-    resultsTree.label = results[0].file;
-    resultsTree.leaf = results[0].annotations.reduce(buildLeaf, {});
-  }
-  // Recursive file tree results
-  else {
-    resultsTree.label = target + '/';
-    resultsTree.nodes = results.reduce(function (rows, row) {
-      rows.push({
-        label: row.file.split(target)[1].replace('/', ''),
-        leaf: row.annotations.reduce(buildLeaf, {})
-      });
-      return rows;
-    }, []);
-  }
-  return console.log(tree(resultsTree));
+  return results.forEach(function (row) {
+    var resultsTree = {};
+    resultsTree.label = row.file;
+    resultsTree.leaf = row.annotations.reduce(buildLeaf, {});
+    console.log(tree(resultsTree));
+  });
 }
 
 function buildLeaf(notes, a) {
